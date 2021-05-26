@@ -7,7 +7,43 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.HomePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 80px);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+
+.MovieAppBar {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.NavLink {
+  font-size: 20px;
+  color: black;
+  margin: 20px;
+}
+
+.NavLink-active {
+  color: rgb(112, 154, 216);
 }
